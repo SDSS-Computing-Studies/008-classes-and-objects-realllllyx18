@@ -1,13 +1,21 @@
 {
   "tests": [
     {
+<<<<<<< HEAD
       "name": "Assertion Tests",
+=======
+      "name": "Assertion Test",
+>>>>>>> 592e1fe424f2dde6b355f7180624e7bfae899281
       "setup": "sudo -H pip3 install pytest",
       "run": "pytest",
       "input": "",
       "output": "",
       "comparison": "included",
+<<<<<<< HEAD
       "timeout": 1,
+=======
+      "timeout": 10,
+>>>>>>> 592e1fe424f2dde6b355f7180624e7bfae899281
       "points": 10
     }
   ]
