@@ -23,11 +23,34 @@ constructor     - should require the student name, studentNumber and grade (in t
 """
 
 class student:
+    name = ""
+    studentNumber = ""
+    grade = 0
+
 
     # properties should be listed first
 
-    def __init__(): # You will need to create your own input parameters for all methods
-        pass
+    def __init__(self, name, studentNumber, grade): # You will need to create your own input parameters for all methods
+        self.name = name
+        self.studentNumber = studentNumebr
+        self.grade = grade
+        print(self.name + " with the studentID " + self.studentNumebr + " is in " + self.grade + ".")
+    def getCourses(self,courses):
+        self.getCourse = getCourse
+        return self.getCourse
+    def getGrades(self,grades):
+        self.getGrades = getGrades
+        returm self.getGrades
+    def showCourses(self):
+        print(self.name + " has " + self.getGrades + ".")
+    def showGrades(self):
+        print(self.name + " has the grades" + self.getGrades + ".")
+    def HonorRoll(self):
+        a = 0
+        for i in self.getGrades:
+            a = a + i
+            average = 
+
 
     def __del__():
         pass
@@ -44,8 +67,8 @@ def main():
     st1.getGrades( 91, 94, 87, 99, 82, 100, 73)
 
     st2 = student("Joe Lunchbox","12346", 11)
-    st1.getCourses( ["English","Math","Physics","Computers","Geography","Chemistry","French"] )
-    st1.getGrades( 71, 98, 93, 95, 68, 81, 71)
+    st2.getCourses( ["English","Math","Physics","Computers","Geography","Chemistry","French"] )
+    st2.getGrades( 71, 98, 93, 95, 68, 81, 71)
 
 
 
