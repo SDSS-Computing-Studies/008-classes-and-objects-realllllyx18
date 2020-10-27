@@ -29,7 +29,7 @@ class student:
     courses = []
     grades = []
     honornum = 0
-    honor = False
+
 
 
     # properties should be listed first
