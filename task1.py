@@ -58,7 +58,7 @@ class student:
         print(self.courses[index])
         print(self.grades[index])
        
-    def HonorRoll(self,honor,honornum,grades):
+    def getHonorRoll(self,honor,honornum,grades):
         grades.sort()
         honornum = grades[0] + grades[1] + grades[2] + grades[3] + grades[4]
         if honornum >= 86:
