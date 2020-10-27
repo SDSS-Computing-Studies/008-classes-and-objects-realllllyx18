@@ -26,6 +26,10 @@ class student:
     name = ""
     studentNumber = ""
     grade = 0
+    courses = []
+    grades = []
+    honornum = 0
+    honor = False
 
 
     # properties should be listed first
@@ -41,22 +45,31 @@ class student:
     def getGrades(self,grades):
         self.getGrades = getGrades
         returm self.getGrades
+    def index(self):
+        index = input("Enter the index: ")
+        return int(index)
     def showCourses(self):
-        print(self.name + " has " + self.getGrades + ".")
-    def showGrades(self):
-        print(self.name + " has the grades" + self.getGrades + ".")
-    def HonorRoll(self):
-        a = 0
-        for i in self.getGrades:
-            a = a + i
-            average = 
-
+        print(self.courses)
+    def showGrades(self,index):
+        print(self.courses[index])
+        print(self.grades[index])
+       
+    def HonorRoll(self,honor,honornum,grades):
+        grades.sort()
+        honornumber = grades[0] + grades[1] + grades[2] + grades[3] + grades[4]
+        if honornum >= 86:
+            honor = True
+            print("This student is on the honor roll")
+        else: 
+            honor = False
+            return honor
 
     def __del__():
         pass
 
     def average(self):
-        pass
+        average = sum(self.courses()) / len(self.courses())
+        return average
 
 def main():
     # This contains test data that will be used by the autograder.
