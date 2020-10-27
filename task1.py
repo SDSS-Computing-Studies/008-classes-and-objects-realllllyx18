@@ -34,38 +34,42 @@ class student:
 
     # properties should be listed first
 
-    def __init__(self, name, studentNumber, grade): # You will need to create your own input parameters for all methods
+    def __init__(self,name,studentNumber,grade): # You will need to create your own input parameters for all methods
         self.name = name
-        self.studentNumber = studentNumebr
+        self.studentNumber = studentNumber
         self.grade = grade
-        print(self.name + " with the studentID " + self.studentNumebr + " is in " + self.grade + ".")
+        print("This is the profile of " + self.name + "with the student number " + self.studentNumber + " in grade " + str(self.grade) + ".")
     def getCourses(self,courses):
-        self.getCourse = getCourse
-        return self.getCourse
+        self.courses = courses
+        return self.courses
+
     def getGrades(self,grades):
-        self.getGrades = getGrades
-        returm self.getGrades
+        self.grades = grades
+        return self.grades
+
     def index(self):
         index = input("Enter the index: ")
         return int(index)
+
     def showCourses(self):
         print(self.courses)
+
     def showGrades(self,index):
         print(self.courses[index])
         print(self.grades[index])
        
     def HonorRoll(self,honor,honornum,grades):
         grades.sort()
-        honornumber = grades[0] + grades[1] + grades[2] + grades[3] + grades[4]
+        honornum = grades[0] + grades[1] + grades[2] + grades[3] + grades[4]
         if honornum >= 86:
             honor = True
             print("This student is on the honor roll")
         else: 
             honor = False
             return honor
-
-    def __del__():
-        pass
+        
+    def __del__(self):
+        print("Complete.")
 
     def average(self):
         average = sum(self.courses()) / len(self.courses())
@@ -77,11 +81,11 @@ def main():
 
     st1 = student("Anita Bath","91334",11)
     st1.getCourses( ["English","Math","PE","Computers","History","Biology","Japanese"] )
-    st1.getGrades( 91, 94, 87, 99, 82, 100, 73)
+    st1.getGrades( [91, 94, 87, 99, 82, 100, 73])
 
     st2 = student("Joe Lunchbox","12346", 11)
     st2.getCourses( ["English","Math","Physics","Computers","Geography","Chemistry","French"] )
-    st2.getGrades( 71, 98, 93, 95, 68, 81, 71)
+    st2.getGrades( [71, 98, 93, 95, 68, 81, 71])
 
 
 
