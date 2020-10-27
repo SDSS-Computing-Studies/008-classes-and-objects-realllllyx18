@@ -60,7 +60,7 @@ class student:
        
     def getHonorRoll(self,honor,honornum,grades):
         grades.sort()
-        honornum = grades[0] + grades[1] + grades[2] + grades[3] + grades[4]
+        honornum = grades[-1] + grades[-2] + grades[-3] + grades[-4] + grades[-5]
         if honornum >= 86:
             honor = True
             print("This student is on the honor roll")
