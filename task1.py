@@ -29,7 +29,6 @@ class student:
     courses = []
     grades = []
     honornum = 0
-    honor = True
 
 
     # properties should be listed first
@@ -66,7 +65,7 @@ class student:
             print("This student is on the honor roll")
         else: 
             honor = False
-            return honor
+        return honor
         
     def __del__(self):
         print("Complete.")
